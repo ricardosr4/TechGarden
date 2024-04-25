@@ -5,17 +5,39 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.techgarden.Computer
+import com.example.techgarden.Device
 import com.example.techgarden.R
+import com.example.techgarden.SmartPhone
+import com.example.techgarden.State
+import com.example.techgarden.Tablet
+import com.example.techgarden.databinding.ActivityHomeTechGardenBinding
 
 class HomeTechGarden : AppCompatActivity() {
+
+    private lateinit var binding: ActivityHomeTechGardenBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_home_tech_garden)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        binding= ActivityHomeTechGardenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        var miComputer = Computer("acer", "intel i5", State.EN_REPARACION)
+        val myTablet= Tablet("amazon","a1",State.NUEVO)
+        val mySmartPhone = SmartPhone("Samsung","s22",State.USADO)
+
+       // mySmartPhone.ok3()
+       // binding.tvTitle.text = mySmartPhone.ok3().toString()
+
+
+
+
+
+
+
+
+
+
+
     }
 }
