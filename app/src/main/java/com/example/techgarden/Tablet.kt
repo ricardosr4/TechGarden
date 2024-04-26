@@ -4,9 +4,5 @@ class Tablet(brand: String, model: String, state: State): Device(brand,model,sta
 
     val pantalla = Double
 
-    fun ok2():String{
-        return "okidoki"
-
-    }
 
 }

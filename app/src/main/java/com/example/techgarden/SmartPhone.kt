@@ -1,30 +1,18 @@
 package com.example.techgarden
 
-class SmartPhone(brand: String, model: String, state: State) : Device(brand,model, state){
+import android.util.Log
 
-    val dualSim = Boolean
-    companion object{
-    val listSmartPhone = mutableListOf<Device>(
-        Computer("acer","intel i5", State.NUEVO),
-        Computer("HP", "AMD Rayzer 5", State.USADO),
-        Tablet("Lenovo", "A8", State.EN_REPARACION),
-        SmartPhone("Samsung", "S22", State.EN_REPARACION)
+class SmartPhone(brand: String, model: String, state: State) : Device(brand, model, state) {
 
+    val dualSim: Boolean = true
 
+    companion object {
+        val listSmartPhone = mutableListOf<String>(
 
-    )
-    }
-    fun getListSmartPhone(): String {
-        val stringBuilder = StringBuilder()
-        for (device in listSmartPhone) {
-            stringBuilder.append(device.toString()).append("\n")
-        }
-        return stringBuilder.toString()
+            "hola"
+
+        )
+
     }
 
-
-   /*fun ok3(): Boolean {
-        return true
-    }
-    */
 }
