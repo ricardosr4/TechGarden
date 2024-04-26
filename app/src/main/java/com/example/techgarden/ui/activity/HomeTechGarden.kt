@@ -27,7 +27,8 @@ class HomeTechGarden : AppCompatActivity() {
         val myTablet= Tablet("amazon","a1",State.NUEVO)
         val mySmartPhone = SmartPhone("Samsung","s22",State.USADO)
 
-        binding.tvResult.text = mySmartPhone.getListSmartPhone()
+        //binding.tvResult.text = mySmartPhone.getListSmartPhone()
+
 
        // mySmartPhone.ok3()
        // binding.tvTitle.text = mySmartPhone.ok3().toString()
