@@ -17,6 +17,7 @@ class HomeTechGarden : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeTechGardenBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityHomeTechGardenBinding.inflate(layoutInflater)
@@ -26,16 +27,11 @@ class HomeTechGarden : AppCompatActivity() {
         val myTablet= Tablet("amazon","a1",State.NUEVO)
         val mySmartPhone = SmartPhone("Samsung","s22",State.USADO)
 
+        //binding.tvResult.text = mySmartPhone.getListSmartPhone()
+
+
        // mySmartPhone.ok3()
        // binding.tvTitle.text = mySmartPhone.ok3().toString()
-
-
-
-
-
-
-
-
 
 
 
